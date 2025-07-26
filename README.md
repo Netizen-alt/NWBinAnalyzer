@@ -63,7 +63,7 @@
 ### ขั้นตอนการติดตั้ง
 1. **ดาวน์โหลดโค้ด**
    ```bash
-   git clone https://github.com/your-username/NWBinAnalyzer.git
+   git clone https://github.com/Netizen-alt/NWBinAnalyzer.git
    cd NWBinAnalyzer
    ```
 
