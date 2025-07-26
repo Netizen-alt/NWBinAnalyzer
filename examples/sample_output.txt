@@ -1,0 +1,152 @@
+ตัวอย่างผลลัพธ์จากการรัน: python app.py sample.bin
+
+[+] Magic Header OK: 8e06dec0
+[+] Constant Pool Entries: 24
+
+[00] Length: 7
+     Direct UTF-8: 'require'
+
+[01] Length: 6
+     Direct UTF-8: 'module'
+
+[02] Length: 7
+     Direct UTF-8: 'exports'
+
+[03] Length: 10
+     Direct UTF-8: 'createHash'
+
+[04] Length: 12
+     Direct UTF-8: 'readFileSync'
+
+[05] Length: 13
+     Direct UTF-8: 'writeFileSync'
+
+[06] Length: 15
+     Direct UTF-8: 'verifySignature'
+
+[07] Length: 6
+     Direct UTF-8: 'sha256'
+
+[08] Length: 10
+     Direct UTF-8: 'RSA-SHA256'
+
+[09] Length: 11
+     Direct UTF-8: 'aes-128-gcm'
+
+[10] Length: 13
+     Direct UTF-8: './config.json'
+
+[11] Length: 12
+     Direct UTF-8: '/tmp/log.txt'
+
+[12] Length: 9
+     Direct UTF-8: 'worker.js'
+
+[13] Length: 25
+     Direct UTF-8: 'https://api.example.com'
+
+[14] Length: 21
+     Direct UTF-8: 'http://localhost:3000'
+
+[15] Length: 17
+     Direct UTF-8: 'Invalid signature'
+
+[16] Length: 14
+     Direct UTF-8: 'File not found'
+
+[17] Length: 13
+     Direct UTF-8: 'Hash mismatch'
+
+[18] Length: 5
+     Binary data (5 bytes):
+       Magic bytes: 0102030405
+       Unique bytes: 5/256
+
+[19] Length: 4
+     Binary data (4 bytes):
+       Magic bytes: fffefdfc
+       Unique bytes: 4/256
+
+[20] Length: 0
+     Empty/whitespace string
+
+[21] Length: 12
+     Direct UTF-8: 'ทดสอบ'
+
+[22] Length: 12
+     Direct UTF-8: '🔐🌐📁'
+
+[+] All extracted strings (22):
+   1. ''
+   2. './config.json'
+   3. '/tmp/log.txt'
+   4. 'File not found'
+   5. 'Hash mismatch'
+   6. 'Invalid signature'
+   7. 'RSA-SHA256'
+   8. 'aes-128-gcm'
+   9. 'createHash'
+  10. 'exports'
+  11. 'http://localhost:3000'
+  12. 'https://api.example.com'
+  13. 'module'
+  14. 'readFileSync'
+  15. 'require'
+  16. 'sha256'
+  17. 'verifySignature'
+  18. 'worker.js'
+  19. 'writeFileSync'
+  20. 'ทดสอบ'
+  21. '🔐🌐📁'
+
+[+] String Analysis:
+
+  📋 API CALLS (6):
+    - 'createHash'
+    - 'readFileSync'
+    - 'require'
+    - 'verifySignature'
+    - 'writeFileSync'
+
+  📋 FILE PATHS (3):
+    - './config.json'
+    - '/tmp/log.txt'
+    - 'worker.js'
+
+  📋 URLS (2):
+    - 'http://localhost:3000'
+    - 'https://api.example.com'
+
+  📋 CRYPTO RELATED (3):
+    - 'RSA-SHA256'
+    - 'aes-128-gcm'
+    - 'sha256'
+
+  📋 NODE MODULES (3):
+    - 'exports'
+    - 'module'
+    - 'require'
+
+  📋 ERROR MESSAGES (3):
+    - 'File not found'
+    - 'Hash mismatch'
+    - 'Invalid signature'
+
+  📋 OTHER (2):
+    - 'ทดสอบ'
+    - '🔐🌐📁'
+
+[+] Detected Functionality:
+  🌐 Network communication (HTTP requests)
+  🔐 Cryptographic operations
+  📁 File system operations
+  ✅ Code/data verification
+
+[+] String Relationships:
+  'sha256' is part of 'RSA-SHA256'
+  Similar prefix: 'readFileSync' <-> 'require'
+  Similar suffix: 'writeFileSync' <-> 'readFileSync'
+  Similar prefix: 'http://localhost:3000' <-> 'https://api.example.com'
+
+[!] This tool shows constant pool and extracted strings.
+[!] Full opcode decompilation requires V8 bytecode parser (complex).
